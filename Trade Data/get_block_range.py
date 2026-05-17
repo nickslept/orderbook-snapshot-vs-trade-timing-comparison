@@ -34,7 +34,7 @@ def get_block_by_timestamp(timestamp, closest):
 start_block = get_block_by_timestamp(START_DATE_UNIX,  "after")
 end_block   = get_block_by_timestamp(END_DATE_UNIX, "before")
 
-print(f"Block range for {START_DATE_READABLE} to {END_DATE_READABLE}:")
+print(f"Block range for {START_DATE_READABLE} UTC to {END_DATE_READABLE} UTC:")
 print(f"Start block: {start_block}")
 print(f"End block:   {end_block}")
 print(f"Total blocks: {end_block - start_block:,}")
