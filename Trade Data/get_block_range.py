@@ -2,6 +2,9 @@
 Gets the block range for specified timestamps using binary search.
 Adjust START_DATE_READABLE and END_DATE_READABLE to adjust the date range. Times are in UTC.
 Note that the API key is hardcoded here for simplicity.
+
+These block numbers will then be used to fetch trades from the blockchain within the specified block range.
+This allows for consistent comparison between snapshot data and on-chain trade data.
 """
 import requests
 from datetime import datetime, timezone
