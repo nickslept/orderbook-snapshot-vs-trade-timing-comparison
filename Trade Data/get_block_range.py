@@ -10,8 +10,8 @@ import requests
 from datetime import datetime, timezone
 
 #year, month, day, hour, minute, second
-START_DATE_READABLE  = datetime(2026, 1,  2,  0,  0,  0, tzinfo=timezone.utc)
-END_DATE_READABLE    = datetime(2026, 5, 17, 12, 00, 00, tzinfo=timezone.utc)
+START_DATE_READABLE  = datetime(2026, 1,  15,  0,  0,  0, tzinfo=timezone.utc)
+END_DATE_READABLE    = datetime(2026, 1, 29,  0,  0,  0, tzinfo=timezone.utc)
 
 START_DATE_UNIX = int(START_DATE_READABLE.timestamp())
 END_DATE_UNIX   = int(END_DATE_READABLE.timestamp())
