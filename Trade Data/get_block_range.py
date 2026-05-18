@@ -16,7 +16,7 @@ END_DATE_READABLE    = datetime(2026, 5, 17, 12, 00, 00, tzinfo=timezone.utc)
 START_DATE_UNIX = int(START_DATE_READABLE.timestamp())
 END_DATE_UNIX   = int(END_DATE_READABLE.timestamp())
 
-API_KEY = ""
+API_KEY = input("Enter your Etherscan API key: ")
 
 def get_block_by_timestamp(timestamp, closest):
     url = "https://api.etherscan.io/v2/api"
