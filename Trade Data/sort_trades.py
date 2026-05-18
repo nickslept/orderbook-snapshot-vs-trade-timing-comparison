@@ -22,7 +22,7 @@ try:
         COPY (
             SELECT * 
             FROM read_parquet('{raw_file}')
-            ORDER BY market_id, asset_id, timestamp
+            ORDER BY market_id, asset_id, block_number, log_index
         ) 
         TO '{temp_sorted_file}' (FORMAT PARQUET);
     """)
